@@ -406,5 +406,11 @@ namespace LoreSoft.Calculator
             Settings.Default.IsSingleInstance = allowOnlyOneInstanceToolStripMenuItem.Checked;
             Settings.Default.Save();
         }
+
+        //testing commits
+        private void inputLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
