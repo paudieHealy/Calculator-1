@@ -1,6 +1,6 @@
 language: csharp
-solution: solution-name.sln
-script:    # the following commands are just examples, use whatever your build process requires
-  - ./build.sh
-  - ./test.sh
-  - grep "Test Results" build.log
+solution: src/Backoff.sln
+install:
+  - nuget # lets get version number
+  - nuget restore src/Backoff.sln -Verbosity detailed
+  - nuget update src/Backoff.sln -Verbosity detailed
